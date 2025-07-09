@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* cursor: none; */
+}
+
+
+body{
+  background-color: #000;
+}
+
+.circle{
+  --circle-size: 40px;
+  position: fixed;
+  height: calc(var(--circle-size));
+  width: calc(var(--circle-size));
+  border: 1px solid #fff;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
+}

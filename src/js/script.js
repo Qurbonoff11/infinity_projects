@@ -20,7 +20,7 @@ dataBase.map((item) => {
       <div class="card-content">
         <div class="text">
           <h3 class="card-title">${title}</h3>
-          <p class="card-description">${description}</p>
+          <p class="card-description">${description == undefined ? '' : description}</p>
         </div>
         <a class="card-link" target="_blank" href="${link}">
           <button id="cardBtn">See Project</button>
@@ -31,4 +31,3 @@ dataBase.map((item) => {
 
   cardList.innerHTML += card
 });
-

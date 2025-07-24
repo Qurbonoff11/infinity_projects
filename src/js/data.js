@@ -37,4 +37,10 @@ export const dataBase = [
     // description: "Project description",
     link: "./07.Button_Click_Animation/index.html"
   },
+  {
+    img: './src/assets/08-project.png',
+    title: "Modern Border",
+    // description: "Project description",
+    link: "./08.Moder_Border/index.html"
+  },
 ]

@@ -49,4 +49,10 @@ export const dataBase = [
     // description: "Project description",
     link: "./09.Social_share_btn/index.html"
   },
+  {
+    img: './src/assets/10-project.png',
+    title: "Music Player",
+    // description: "Project description",
+    link: "./10.Music_player/index.html"
+  },
 ]

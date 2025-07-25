@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.keyboard .key {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 8px 15px;
+  background: linear-gradient(100deg, #282828, #202020);
+  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25), 10px 20px 25px rgba(0, 0, 0, 0.4),
+    0 0 0 2px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.keyboard .key::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  bottom: 10px;
+  right: 8px;
+  background: linear-gradient(90deg, #232323, #4a4a4a);
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.25), 10px 5px 10px rgba(0, 0, 0, 0.15);
+  border-left: 1px solid #0004;
+  border-bottom: 1px solid #0004;
+  border-top: #0009;
+  border-radius: 8px;
+}
+
+.keyboard .key i{
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: .75;
+  font-weight: normal;
+  font-style: normal;
+  user-select: none;
+}
+
+.lineBreak {
+  flex-basis: 100%;
+}
+
+.keyboard .key.active{
+  background: #f00;
+}
+
+.keyboard .key.active::before{
+  background: linear-gradient(90deg, #d20000, #ffffff5c);
+  border-left: 1px solid #fff4;
+  border-bottom: 1px solid #fff4;
+  border-top: #fff4;
+}

@@ -61,4 +61,10 @@ export const dataBase = [
     // description: "Project description",
     link: "./11.Shadow_effect/index.html"
   },
+  {
+    img: './src/assets/12-project.png',
+    title: "Music Player",
+    // description: "Project description",
+    link: "./12.Keyboard/index.html"
+  },
 ]

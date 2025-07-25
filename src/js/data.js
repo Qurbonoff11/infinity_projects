@@ -57,14 +57,26 @@ export const dataBase = [
   },
   {
     img: './src/assets/11-project.png',
-    title: "Music Player",
+    title: "Shadow Effect",
     // description: "Project description",
     link: "./11.Shadow_effect/index.html"
   },
   {
     img: './src/assets/12-project.png',
-    title: "Music Player",
+    title: "Keyboard",
     // description: "Project description",
     link: "./12.Keyboard/index.html"
+  },
+  {
+    img: './src/assets/13-project.png',
+    title: "Navigation Tabs",
+    // description: "Project description",
+    link: "./13.Navigation_tabs/index.html"
+  },
+  {
+    img: './src/assets/14-project.png',
+    title: "Inverted Card",
+    // description: "Project description",
+    link: "./14.Inverted_Card/index.html"
   },
 ]

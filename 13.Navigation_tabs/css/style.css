@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #10202b;
+}
+
+.tabs input {
+  visibility: hidden;
+  display: none;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  gap: 80px;
+  padding: 30px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: #182d3c;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.buttons label {
+  width: 20%;
+  font-size: 1.75rem;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons label:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.tabs input:nth-child(4):checked ~ .buttons label:nth-child(4),
+.tabs input:nth-child(5):checked ~ .buttons label:nth-child(5) {
+  color: #fff;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 5px;
+  transition: all 0.5s ease;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff)
+    drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff);
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff)
+    drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff) blur(5px);
+}
+
+.tabs input:nth-child(1):checked ~ .buttons .underline {
+  left: 0;
+}
+.tabs input:nth-child(2):checked ~ .buttons .underline {
+  left: 20%;
+}
+.tabs input:nth-child(3):checked ~ .buttons .underline {
+  left: 40%;
+}
+.tabs input:nth-child(4):checked ~ .buttons .underline {
+  left: 60%;
+}
+.tabs input:nth-child(5):checked ~ .buttons .underline {
+  left: 80%;
+}

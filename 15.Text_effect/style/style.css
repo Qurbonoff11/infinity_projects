@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+div span{
+  color: #00860b;
+  font-size: 6rem;
+  font-weight: 800;
+  text-shadow: -5px 0 15px rgb(0, 0, 0);
+}
+
+div span:not(:first-child){
+  margin-left: -17px;
+}
